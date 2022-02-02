@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+/* About us Part */
+.about-services{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.about-section{
+    background:url(../img/darthcodeNeon.png) no-repeat left ;
+    background-size: 50%;
+    overflow: hidden;
+    padding: 100px ;
+}
+
+.inner-containerAbout{
+    width: 80%;
+    float: right;
+    background-color: #001246;
+    background-image: linear-gradient(62deg, #071a52 0%, #086972 50%, #071a52 100%);
+    padding: 50px;
+    color: rgb(167, 255, 131);
+    box-shadow: 0px 0px 20px 0px rgb(167, 255, 131);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.inner-containerAbout h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.inner-containerAbout p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+@media screen and (maxi-width:1200px){
+    .inner-containerAbout{
+        padding: 80px;
+    }
+}
+
+@media screen and (maxi-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-containerAbout{
+        padding: 80px;
+    }
+}
+
+@media screen and (maxi-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-containerAbout{
+        padding: 60px;
+    }
+}
+.inner-containerAbout:hover{
+    background-color: #17b978;
+    background-image: linear-gradient(43deg, #17b978 0%, #a7ff83 50%, #17b978 100%);
+    color:#071a52;
+    transition: .5s all;
+    transform: scale(1.1);
+}
+
+/* Services part */
+
+.services{
+    min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #071a52;
+      background-image: linear-gradient(62deg, #071a52 0%, #086972 50%, #071a52 100%);
+  }
+  .Container{
+    width: 150%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+  }
+  
+  .table{
+    width: 20%;
+    height: 550px;
+    margin: 3px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgb(167, 255, 131);
+    padding: 40px;
+    text-align: center;
+    flex-grow: 1;
+    color: #17B978;    
+  }
+  
+  .textServices{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 150%;
+    margin: bottom 35px;
+  }
+  
+  .imgServices{
+    visibility: hidden;
+  }
+  
+  p{
+    
+    margin-bottom: 20px;
+  }
+  
+  .button{
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(167, 255, 131);
+    text-decoration: none;
+    color: rgb(7, 26, 82);
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+  }
+  
+  .table:hover{
+    background-color: #17b978;
+    background-image: linear-gradient(43deg, #17b978 0%, #a7ff83 50%, #17b978 100%);
+    color:#071a52;
+    transition: .5s all;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .table:hover img{
+    visibility: visible;
+    margin-top: 8%;
+    width: 90%;
+    height: 90%;
+    transition: .5s;
+    max-width: 200px;
+    max-height: 250px;
+    
+  }
+  
+  .table:hover .button{
+    background-color: rgb(7, 26, 82);
+    transition: .5s;
+    color: rgb(167, 255, 131);
+  }

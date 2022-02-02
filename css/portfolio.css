@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+#portfolio
+{
+    background-image:url('../img/backgroundteamlarge.png') ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.containerPort .cardPort .imgBxPort{
+    display: flex;
+    position: relative;
+}
+
+.containerPort
+{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.containerPort .cardPort
+{
+    position: relative;
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerPort .cardPort .contentPort
+{
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    flex-direction:column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: bottom 0.5s;
+    transition-delay: 0.8s;
+}
+
+.containerPort .cardPort:hover .contentPort
+{
+    bottom: 0px;
+    transition-delay: 0.8s;
+}
+
+.containerPort .cardPort .contentPort .contentBoxPort h3
+{
+    color: royalblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition-delay: 0.6s;
+}
+
+.containerPort .cardPort:hover .contentPort .contentBoxPort h3
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.containerPort .cardPort .contentPort .contentBoxPort h3 span
+{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.containerPort .cardPort .contentPort .sci
+{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+.containerPort .cardPort .contentPort .sci li
+{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s * var(--i));
+}
+
+.containerPort .cardPort:hover .contentPort .sci li
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.containerPort .cardPort:hover .contentPort .sci li a
+{
+    color: lawngreen;
+    font-size: 24px;
+}
